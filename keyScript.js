@@ -1,10 +1,3 @@
-document.onkeypress = function(keyEvent)
-{
-	keyEvent = keyEvent || window.event;
+"use strict";
 
-	var keystr = keyEvent.charCode || keyEvent.keyCode;
-
-	var evt = new CustomEvent("ImperoKeyPressEvent", { 'bubbles' : true, 'cancelable' : true , 'detail' : keystr } );
-
-	document.dispatchEvent(evt);
-}
+var menu = []
