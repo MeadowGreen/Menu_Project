@@ -36,18 +36,19 @@ html{
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
+    
 }
 body{
     background-color: rgb(255, 204, 153);
-    height: 7000px;
+    height: 8600px;
     width: 75%;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 40px;
+    margin-left: 200px;
+    margin-top: 0;
     border: black 2px solid;
     text-align: center;
-    vertical-align: middle;
+    vertical-align: middle
 }
+
 header{
     background-color: #D68D11;
     font-size: 60px;
@@ -55,15 +56,23 @@ header{
     text-align: center;
     height: 80px;
     margin-top: 0px;
-    padding-top: 20px;
+    top: 0px;
 }
 nav{
-    position: absolute;
     background-color: #D68D11;
     height: 60px;
-    width: 75%;
+    width: 100%;
     margin-top: 0px;
     font-size: 25px;
+}
+div#head{
+    position: fixed;
+    height: 200px;
+    width: 75%;
+    margin-top: 0px;
+}
+ul{
+    margin-top: 0px;
 }
 nav > ul li {
     float: left;
@@ -82,8 +91,9 @@ li a:hover{
     color: #A00000;
     text-shadow: white 0px 0px 10px;
 }
- 
- 
+section{
+    margin-top: 200px;
+}
 div{
     height: 780px;
     margin-top: 30px;
@@ -92,10 +102,19 @@ div{
 div#lunch{
     margin-top: 100px;
 }
-div#chinese, div#veggies, div#soups{
+div#thai{
+    height: 1890px;
+}
+div#chinese{
     margin-top: 300px;
 }
+div#veggies{
+    margin-top: 300px;
+}
+
+
 h1{
+
     font-size: 30px;
     color: #721817;
     border-bottom: #D68D11 5px double;
@@ -106,6 +125,13 @@ span{
     font-size: 15px;
     color: black;
 }
+span#spicy{
+    font-size: 20px;
+    margin-left: 20%;
+}
 p{
-    font-size: 30px;
+    padding-top: 20px;
+    font-size: 20px;
+    text-align: center;
+    
 }
