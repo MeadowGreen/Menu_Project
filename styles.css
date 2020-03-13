@@ -13,46 +13,99 @@ div.col-1-1{
 div.col-1-2{
     width: 50%;
 }
-
-
+ 
+article, aside, figcaption, figure,
+footer, header, main, nav, section { 
+   display: block;
+}
+ 
+ 
+ 
+nav ul {
+   list-style: none;
+   list-style-image: none;
+}
+ 
+nav a {
+   text-decoration: none;
+}
+/*=====================================================================================*/
+ 
 html{
-    background-color: rgb(253, 244, 236);
+    background-image: url("back1.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+body{
+    background-color: rgb(255, 204, 153);
+    height: 7000px;
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+    border: black 2px solid;
+    text-align: center;
+    vertical-align: middle;
 }
 header{
-    position: absolute;
-    width: 100%;
-    height: 200px;
-    background-color:rgb(77, 0, 0);
-}
-h1#header{
-    font-size: 80px;
-    color: white;
+    background-color: #D68D11;
+    font-size: 60px;
+    color: #721817;
     text-align: center;
+    height: 80px;
+    margin-top: 0px;
+    padding-top: 20px;
 }
 nav{
     position: absolute;
-    top: 200px;
-    background-color: rgb(77, 0, 0);
-    width: 250px;
-    height: 700px;
+    background-color: #D68D11;
+    height: 60px;
+    width: 75%;
+    margin-top: 0px;
+    font-size: 25px;
 }
-nav ul{   
-    list-style: none;
-    padding-top: 40px;
-    padding-left: 10px;
+nav > ul li {
+    float: left;
 }
-nav li a{
-    
-    text-decoration: none; 
-    color: white;
-    font-size: 30px;
+nav ul::after{
+    clear: both;
+    content:"";
+    display: table;
 }
-nav li{
-    text-align: center;
+li a{
+    padding: 15px;
     padding-bottom: 20px;
+    color: #721817;
 }
-
-section{
-    position: absolute;
-    text-align: ;
+li a:hover{
+    color: #A00000;
+    text-shadow: white 0px 0px 10px;
+}
+ 
+ 
+div{
+    height: 780px;
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+div#lunch{
+    margin-top: 100px;
+}
+div#chinese, div#veggies, div#soups{
+    margin-top: 300px;
+}
+h1{
+    font-size: 30px;
+    color: #721817;
+    border-bottom: #D68D11 5px double;
+    text-align: left;
+    margin-left: 20px;
+}
+span{
+    font-size: 15px;
+    color: black;
+}
+p{
+    font-size: 30px;
 }
